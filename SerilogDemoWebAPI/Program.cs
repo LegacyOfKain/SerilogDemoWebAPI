@@ -38,8 +38,18 @@ namespace SerilogDemoWebAPI
             Log.Logger = new LoggerConfiguration()
                 .WriteTo.Console(
                 outputTemplate: "[{Timestamp:G} {Level:u3}] {MachineName}<{ThreadId}> {Message:lj}{NewLine}{Exception}")
+                .WriteTo.Async(a =>
+                {
+                    a.PersistentFile("log.txt", 
+                        fileSizeLimitBytes:4096 ,
+                        rollOnFileSizeLimit : true, 
+                        retainedFileCountLimit : 3,
+                        preserveLogFilename: true); // <<<<<
+                })
+                /*
                 .WriteTo.File(@"log.txt", 
                 outputTemplate: "[{Timestamp:o} {Level:u3}] {MachineName}<{ThreadId}> {Message:lj}{NewLine}{Exception}")
+                */
                 .Enrich.WithThreadId()
                 .Enrich.WithMachineName()
                 .CreateLogger();
