@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 namespace SerilogDemoWebAPI.Controllers
@@ -26,7 +27,11 @@ namespace SerilogDemoWebAPI.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
-            _logger.LogInformation("Logging from Controller");
+            _logger.LogInformation("Logging from Controller" );
+
+            //Logger with line number
+            SerilogDemoWebAPI.Utils.Trace.TraceMessage(_logger, "Logging from Controller");
+
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

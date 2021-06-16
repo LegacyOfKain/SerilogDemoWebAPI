@@ -36,8 +36,10 @@ namespace SerilogDemoWebAPI
         public static void ConfigureLogger()
         {
             Log.Logger = new LoggerConfiguration()
+                //you can avoid console for prod applications
                 .WriteTo.Console(
                 outputTemplate: "[{Timestamp:G} {Level:u3}] {MachineName}<{ThreadId}> {Message:lj}{NewLine}{Exception}")
+                //changed file logging to async to unmount the load of logging from the thread of the main app
                 .WriteTo.Async(a =>
                 {
                     a.PersistentFile("log.txt", 

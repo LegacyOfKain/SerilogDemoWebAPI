@@ -1,13 +1,7 @@
-2021-06-16 02:13:41.580 +02:00 [INF] Logging from Controller
-2021-06-16 02:13:41.587 +02:00 [INF] Executing ObjectResult, writing value of type 'SerilogDemoWebAPI.WeatherForecast[]'.
-2021-06-16 02:13:41.598 +02:00 [INF] Executed action SerilogDemoWebAPI.Controllers.WeatherForecastController.Get (SerilogDemoWebAPI) in 18.3265ms
-2021-06-16 02:13:41.609 +02:00 [INF] Executed endpoint 'SerilogDemoWebAPI.Controllers.WeatherForecastController.Get (SerilogDemoWebAPI)'
-2021-06-16 02:13:41.614 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/WeatherForecast - - - 200 - application/json;+charset=utf-8 54.3795ms
-2021-06-16 02:13:41.724 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/WeatherForecast - -
-2021-06-16 02:13:41.725 +02:00 [INF] Executing endpoint 'SerilogDemoWebAPI.Controllers.WeatherForecastController.Get (SerilogDemoWebAPI)'
-2021-06-16 02:13:41.728 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[SerilogDemoWebAPI.WeatherForecast] Get() on controller SerilogDemoWebAPI.Controllers.WeatherForecastController (SerilogDemoWebAPI).
-2021-06-16 02:13:41.740 +02:00 [INF] Logging from Controller
-2021-06-16 02:13:41.742 +02:00 [INF] Executing ObjectResult, writing value of type 'SerilogDemoWebAPI.WeatherForecast[]'.
-2021-06-16 02:13:41.747 +02:00 [INF] Executed action SerilogDemoWebAPI.Controllers.WeatherForecastController.Get (SerilogDemoWebAPI) in 6.3548ms
-2021-06-16 02:13:41.751 +02:00 [INF] Executed endpoint 'SerilogDemoWebAPI.Controllers.WeatherForecastController.Get (SerilogDemoWebAPI)'
-2021-06-16 02:13:41.759 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/WeatherForecast - - - 200 - application/json;+charset=utf-8 35.0155ms
+2021-06-16 02:56:43.061 +02:00 [INF] Logging from Controller
+2021-06-16 02:56:43.064 +02:00 [INF] WeatherForecastController.cs:33 Logging from Controller
+2021-06-16 02:56:43.068 +02:00 [INF] Executing ObjectResult, writing value of type 'SerilogDemoWebAPI.WeatherForecast[]'.
+2021-06-16 02:56:43.072 +02:00 [INF] Executed action SerilogDemoWebAPI.Controllers.WeatherForecastController.Get (SerilogDemoWebAPI) in 10.7606ms
+2021-06-16 02:56:43.079 +02:00 [INF] Executed endpoint 'SerilogDemoWebAPI.Controllers.WeatherForecastController.Get (SerilogDemoWebAPI)'
+2021-06-16 02:56:43.089 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/WeatherForecast - - - 200 - application/json;+charset=utf-8 37.0451ms
+2021-06-16 02:58:06.629 +02:00 [INF] Application is shutting down...
